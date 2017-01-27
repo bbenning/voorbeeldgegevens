@@ -1,12 +1,4 @@
 #!/bin/bash
-<<<<<<< HEAD
-TECHNOLUTION_DIR=~/projects/sideprojects/Technolution-testproject
-
-docker ps -aq |xargs docker rm -f 
-docker run -d -p 9200:9200 -p 9300:9300 -p 5601:5601 -p 5000:5000 -p 5044:5044 \
-  -v $TECHNOLUTION_DIR/src/main/resources/data/backups:/var/lib/elasticsearch/backups-original \
-  -v $TECHNOLUTION_DIR/src/main/resources/data/elasticsearch.yml:/etc/elasticsearch/elasticsearch.yml \
-=======
 PROJECT_DIR=`pwd`
 
 docker ps -aq |xargs docker rm -f 
